@@ -1,3 +1,75 @@
-body {
-	background-color: pink;
+
+body{
+    
+ 	background-repeat: no-repeat;
+ 	background:url(https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg);
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+		
+}
+
+
+
+.container {
+	border: 50px;
+
+padding: 200px;
+
+padding-top: 75px;
+
+
+
+}
+
+
+fieldset {
+	
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #00CCCC;
+  border: inset 2px solid #00CCCC;
+	
+	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+}
+
+
+
+
+legend {
+background-color: #00CCCC;
+color: #FFFFFF;
+font-family: Arial;
+font-size: 100px;
+font-weight: bold;
+border-radius: 50px;
+}
+
+.form-group {
+	color: #00CCCC;
+	
+}
+
+
+	
+
+div {
+	
+    padding=50px;
+	color: #00CCCC;
+}
+
+button {
+	margin-left: 150px;
+	background-color: #00CCCC;
+	COLOR: WHITE;
+	font-weight: bold;
+}
+
+
+#title {
+   margin-right: 100px;
+   
 }

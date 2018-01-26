@@ -1,6 +1,82 @@
 <% include partials/header %>
 
-<h1> Faqja fillestare </h1>
+ <div class="container">
+
+    <form class="document_form"  method="post"  id="document_form">
+<fieldset>
+
+<legend><center><h2><b>Document Form</b></h2></center></legend><br> 
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-5">
+<div class="form-group">
+  <label for="title">Title:</label>
+  <input type="text" class="form-control" id="title" placeholder="Title">
+</div></div></div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="author">Author:</label>
+  <input type="text" class="form-control" id="author" placeholder="First Name Last Name">
+</div> </div>
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="documentno">Document No.:</label>
+  <input type="number" class="form-control" id="documentno" placeholder="Document No.">	
+  
+</div></div>
+</div>
+
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="describe">Description:</label>
+  <textarea class="form-control" rows="5" id="description" placeholder="Describe your file">
+  </textarea>
+</div></div> </div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="pl">Physical location:</label>
+  <select class="form-control" id="pl">
+  <OPTION>--select--</option>
+    <option>a</option>
+    <option>b</option>
+    <option>c</option>
+  </select>
+</div></div> </div>
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="scan"> Scanned document:</label>
+  <input type="FILE" class="form-control" id="SCAN" placeholder="FILE">
+</div></div> </div>
+
+
+
+  <button type="submit" class="btn btn-large">Submit</button>
+  <button type="reset" class="btn btn-large">Reset</button>
+  
+  
+  
 
 
 <% include partials/footer %>

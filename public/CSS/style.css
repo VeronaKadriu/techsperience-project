@@ -7,8 +7,16 @@ body{
 	    background-size: cover;
 		
 }
-
-
+table {
+	border-bottom-color: white;
+	  border: 2px solid #00CCCC;
+  border: inset 2px solid #00CCCC;
+  color: black;
+  padding: 50px;
+ 
+  
+	
+}
 
 .container {
 	border: 50px;
@@ -21,8 +29,9 @@ padding-top: 75px;
 
 }
 
-
 fieldset {
+	
+
 	
   text-decoration: none;
   border-radius: 20px;
@@ -33,6 +42,7 @@ fieldset {
 	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
 	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
 	box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	background-color: #CCFFFF;
 }
 
 
@@ -44,7 +54,7 @@ color: #FFFFFF;
 font-family: Arial;
 font-size: 100px;
 font-weight: bold;
-border-radius: 50px;
+border-radius: 50px
 }
 
 .form-group {

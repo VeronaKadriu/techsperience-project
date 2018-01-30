@@ -1,0 +1,93 @@
+<% include partials/header %>
+
+<style>
+body{
+    
+ 	background-repeat: no-repeat;
+ 	background:url(https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg);
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+		
+}
+
+table {
+	border-bottom-color: white;
+	  border: 5px solid #00CCCC;
+  border: inset 5px solid #00CCCC;
+  color: black;
+  padding:200px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: -40px;
+ 
+  
+	
+}
+
+legend {
+background-color: #00CCCC;
+color: #FFFFFF;
+font-family: Arial;
+font-size: 50px;
+font-weight: bold;
+border-radius: 50px;
+text-align: center;
+}
+fieldset {
+	
+
+	
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid #00CCCC;
+  border: inset 2px solid #00CCCC;
+  weight: 200px;
+  height: 200px;
+  margin:150px;
+  margin-top:50px;
+	
+	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	background-color: #CCFFFF;
+}
+
+
+
+
+
+
+</style>
+
+<fieldset>
+
+
+<legend> Document: </legend>
+
+<table border="5"  action="/documents/add" method="post">
+
+
+<tr> <th> Title </th>
+<th> Author </th> 
+<th> Document No </th>
+<th> Description </th>
+<th> Physical Location </th>
+<th> Edit </th>
+<th> Delete </th>
+
+</tr>
+
+<tr> <td> <%= doc.title%> </td>
+<td> <%= doc.author%> </td>
+<td> <%= doc.documentno%> </td>
+<td> <%= doc.description%> </td>
+<td> <%= doc.physicallocation%> </td>
+
+<td> <a href="/documents/edit/<%= doc._id %>"> Edit </a></td>
+<td> <a href="/documents/delete/<%= doc._id %>"> Delete </a></td>
+</tr>
+
+
+</table>
+<%include partials/footer %>

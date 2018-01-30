@@ -1,0 +1,19 @@
+
+<% include partials/header %>
+<h3> All documents: </h3>
+
+<ul action="/documents/add" method="post">
+
+<% docs.map( function(doc){%> 
+
+<li>
+<%= doc.title + ' - ' +  doc.author + ' - ' + doc.documentno + ' - ' + doc.description + ' - ' + doc.physicallocation%>
+<a href="/documents/<%= doc._id %>"> Show </a>
+<a href="/documents/edit/<%= doc._id %>"> Edit </a>
+<a href="/documents/delete/<%= doc._id %>"> Delete </a>
+</li>
+<% }); %>
+</ul>
+
+
+<% include partials/footer %>

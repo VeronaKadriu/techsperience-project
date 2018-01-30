@@ -1,0 +1,173 @@
+<% include partials/header %>
+
+<style>
+
+body{
+    
+ 	background-repeat: no-repeat;
+ 	background:url(https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg);
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+		
+	
+		
+}
+table {
+	border-bottom-color: white;
+	  border: 2px solid #00CCCC;
+  border: inset 2px solid #00CCCC;
+  color: black;
+  padding: 50px;
+ 
+  
+	
+}
+
+.container {
+	border: 50px;
+
+padding: 200px;
+
+padding-top: 75px;
+
+
+
+}
+
+form{
+padding: 200px;
+padding-top: 75px;
+}
+
+fieldset {
+	
+
+	
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #00CCCC;
+  border: inset 2px solid #00CCCC;
+ 
+	
+	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	box-shadow: 0px 0px 50px rgba(0, 0, 25, 2);
+	background-color: #CCFFFF;
+}
+
+
+
+
+legend {
+background-color: #00CCCC;
+color: #FFFFFF;
+font-family: Arial;
+font-size: 100px;
+font-weight: bold;
+border-radius: 50px
+}
+
+.form-group {
+	color: #00CCCC;
+	
+}
+
+
+	
+
+div {
+	
+    padding=50px;
+	color: #00CCCC;
+}
+
+button {
+	margin-left: 150px;
+	background-color: #00CCCC;
+	COLOR: WHITE;
+	font-weight: bold;
+}
+
+
+#title {
+   margin-right: 100px;
+   
+}
+</style>
+
+		
+<form method="POST" action="/documents/update/<%= doc._id %>">
+  
+<fieldset>
+
+<legend><center><h2><b>Document Form</b></h2></center></legend><br> 
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-5">
+<div class="form-group">
+  <label for="title">Title:</label>
+  <input type="text" value="<%= doc.title%>" class="form-control" id="title" placeholder="Title" required="">
+</div></div></div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="author">Author:</label>
+  <input type="text" value="<%= doc.author%>" class="form-control" id="author" placeholder="First Name Last Name" required="">
+</div> </div>
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="documentno">Document No.:</label>
+  <input type="number" value="<%= doc.documentno%>"  class="form-control"  id="documentno" placeholder="Document No." required="">	
+  
+</div></div>
+</div>
+
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="describe">Description:</label>
+  <textarea class="form-control" rows="5" id="description" placeholder="Describe your file"><%= doc.description %>
+  </textarea>
+</div></div> </div>
+
+
+<div class="row">
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="form-group">
+  <label for="pl">Physical location:</label>
+  <select class="form-control" id="pl">
+  <OPTION><%= doc.physicallocation %></option>
+    <option>a</option>
+    <option>b</option>
+    <option>c</option>
+  </select>
+</div></div> </div>
+
+
+
+
+  <button type="submit" class="btn btn-large">Save</button>
+  <button type="reset" class="btn btn-large">Reset</button>
+
+
+
+
+
+
+
+<%include partials/footer %>
